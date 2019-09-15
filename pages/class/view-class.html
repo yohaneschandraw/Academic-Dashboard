@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+    <title>Academics Dashboard - Class Details</title>
+
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/logo-icon.png">
+
+    <!-- CSS Modules -->
+    <link rel="stylesheet" href="../../node_modules/jqvmap/dist/jqvmap.min.css">
+    <link rel="stylesheet" href="../../node_modules/summernote/dist/summernote-bs4.css">
+    <link rel="stylesheet" href="../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../../node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="../../node_modules/datatables.net-select-bs4/css/select.bootstrap4.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../../assets/css/external/animate-item.css">
+
+    <!-- CSS Assets -->
+    <link rel="stylesheet" href="../../assets/components/fontawesome-free-5.10.1/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/components/Ionicons/css/Ionicons.min.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/components.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="main-wrapper">
+            <div class="navbar-bg"></div>
+            <nav class="navbar navbar-expand-lg main-navbar">
+                <form class="form-inline mr-auto">
+                    <ul class="navbar-nav mr-3">
+                        <li>
+                            <a href="#" data-toggle="sidebar" class="nav-link nav-link-lg">
+                                <i class="fas fa-stream"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </form>
+
+                <ul class="navbar-nav navbar-right">
+                    <li class="dropdown dropdown-list-toggle">
+                        <a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg beep">
+                            <i class="far fa-bell"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-list dropdown-menu-right">
+                            <div class="dropdown-header">Notifications
+                                <div class="float-right">
+                                    <a href="#">Mark All As Read</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-list-content dropdown-list-icons">
+                                <a href="#" class="dropdown-item dropdown-item-unread">
+                                    <div class="dropdown-item-icon bg-primary text-white">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <div class="dropdown-item-desc">
+                                        Template update is available now!
+                                        <div class="time text-primary">2 Min Ago</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <div class="dropdown-item-icon bg-info text-white">
+                                        <i class="far fa-user"></i>
+                                    </div>
+                                    <div class="dropdown-item-desc">
+                                        <b>You</b> and <b>Dedik Sugiharto</b> are now friends
+                                        <div class="time">10 Hours Ago</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dropdown-footer text-center">
+                                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                            <img alt="image" src="../../assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
+                            <div class="d-sm-none d-lg-inline-block">Farell Sujanto</div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="dropdown-title">Logged in 5 min ago</div>
+                            <a href="features-profile.html" class="dropdown-item has-icon">
+                                <i class="fas fa-user-cog"></i> Profile
+                            </a>
+                            <a href="features-activities.html" class="dropdown-item has-icon">
+                                <i class="fas fa-bolt"></i> Activities
+                            </a>
+                            <a href="features-settings.html" class="dropdown-item has-icon">
+                                <i class="fas fa-cog"></i> Settings
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item has-icon text-danger">
+                                <i class="fas fa-sign-out-alt"></i> Logout
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="main-sidebar">
+                <aside id="sidebar-wrapper">
+                    <div class="sidebar-brand">
+                        <a href="index.html">Academic</a>
+                    </div>
+                    <div class="sidebar-brand sidebar-brand-sm">
+                        <a href="index.html">AD</a>
+                    </div>
+
+                    <ul class="sidebar-menu">
+                        <li class="menu-header">Menu</li>
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link">
+                                <i class="fas fa-chart-bar"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="lists.html">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <span>Class</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown">
+                                <i class="fas fa-user"></i> 
+                                <span>Management</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="nav-link" href="../staffs/lists.html">
+                                    Staffs
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="../students/lists.html">
+                                    Students
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="../parents/lists.html">
+                                    Parents
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="payments.html">
+                                <i class="fas fa-file-invoice"></i> 
+                                <span>Payments</span>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+
+            
+            <!-- Main Content -->
+            <div class="main-content">
+                <section class="section">
+                    <div class="section-header">
+                        <h1>
+                           <i class="fas fa-chalkboard-teacher mr-2"></i>
+                            Class
+                        </h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-xl-3">
+                            <div class="card card-widget-1">
+                                <div class="card-icon bg-theme">
+                                    <i class="far fa-user"></i>
+                                </div>
+                                <div class="card-wrap">
+                                    <div class="card-header">
+                                        <h4>Admin</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        1
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-xl-3">
+                            <div class="card card-widget-1">
+                                <div class="card-icon bg-theme">
+                                    <i class="fas fa-chalkboard-teacher"></i>
+                                </div>
+                                <div class="card-wrap">
+                                    <div class="card-header">
+                                        <h4>Active Class</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        12
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-xl-3">
+                            <div class="card card-widget-1">
+                                <div class="card-icon bg-theme">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="card-wrap">
+                                    <div class="card-header">
+                                        <h4>Students</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        500
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-xl-3">
+                            <div class="card card-widget-1">
+                                <div class="card-icon bg-theme">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <div class="card-wrap">
+                                    <div class="card-header">
+                                        <h4>Staffs</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        75
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-12 col-md-4 mb-4">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item">
+                                        <a href="lists.html">Class Lists</a>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page">Class X-Social-1</li>
+                                </ol>
+                            </nav>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="card" id="printableSection">
+                                <div class="card-header">
+                                    <h5 class="float-left mb-0">Class X-Social-1</h5>
+                                    <a data-collapse="#mycard-collapse" class="btn btn-icon btn-a float-right" href="#">
+                                        <i class="fas fa-minus"></i>
+                                    </a>
+                                </div>
+                                
+                                <div class="card-body collapse show" id="mycard-collapse">
+                                    <!-- <button class="btn btn-b mb-3" data-toggle="modal" data-target="#modal-add-student">
+                                        <i class="fas fa-user-plus mr-1"></i>Add
+                                    </button> -->
+                                
+                                    <div class="table-responsive">
+                                        <table class="table table-striped" id="table-1">
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        <div class="custom-checkbox custom-control">
+                                                            <input type="checkbox" data-checkboxes="mygroup" data-checkbox-role="dad" class="custom-control-input" id="checkbox-all">
+                                                            <label for="checkbox-all" class="custom-control-label">&nbsp;</label>
+                                                        </div>
+                                                    </th>
+                                                    <th>#</th>
+                                                    <th>Full Name</th>
+                                                    <th>NIS</th>
+                                                    <th>Email Address</th>
+                                                    <th>Status</th>
+                                                    <th class="no-printable">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="custom-checkbox custom-control">
+                                                            <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input" id="checkbox-1">
+                                                            <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
+                                                        </div>
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td>
+                                                        <img alt="image" src="../../assets/img/avatar/avatar-1.png" class="rounded-circle mr-1" width="25">
+                                                        Chandra Wijaya
+                                                    </td>
+                                                    <td>019875278011</td>
+                                                    <td>chandrawjy97@gmail.com</td>
+                                                    <td>
+                                                        <div class="badge badge-success">
+                                                            Active
+                                                        </div>
+                                                    </td>
+                                                    <td class="no-printable">
+                                                        <div class="dropdown d-inline">
+                                                            <button class="btn btn-action" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                <i class="fas fa-ellipsis-v"></i>
+                                                            </button>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item has-icon" href="view-student.html">
+                                                                    <i class="far fa-user"></i> Profile
+                                                                </a>
+                                                                <a class="dropdown-item has-icon" data-toggle="modal" data-target="#modal-edit-student-class" style="cursor: pointer;">
+                                                                    <i class="far fa-edit"></i> Edit
+                                                                </a>
+                                                                <a class="dropdown-item has-icon text-danger" data-toggle="modal" data-target="#modal-delete" style="cursor: pointer;">
+                                                                    <i class="fas fa-trash"></i> Delete
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="custom-checkbox custom-control">
+                                                            <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input" id="checkbox-2">
+                                                            <label for="checkbox-2" class="custom-control-label">&nbsp;</label>
+                                                        </div>
+                                                    </td>
+                                                    <td>2</td>
+                                                    <td>
+                                                        <img alt="image" src="../../assets/img/avatar/avatar-1.png" class="rounded-circle mr-1" width="25">
+                                                        Simeon Bensona
+                                                    </td>
+                                                    <td>019875278011</td>
+                                                    <td>sbensona777@gmail.com</td>
+                                                    <td>
+                                                        <div class="badge badge-success">
+                                                            Active
+                                                        </div>
+                                                    </td>
+                                                    <td class="no-printable">
+                                                        <div class="dropdown d-inline">
+                                                            <button class="btn btn-action" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                <i class="fas fa-ellipsis-v"></i>
+                                                            </button>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item has-icon" href="view-student.html">
+                                                                    <i class="far fa-user"></i> Profile
+                                                                </a>
+                                                                <a class="dropdown-item has-icon" data-toggle="modal" data-target="#modal-edit-student-class" style="cursor: pointer;">
+                                                                    <i class="far fa-edit"></i> Edit
+                                                                </a>
+                                                                <a class="dropdown-item has-icon text-danger" data-toggle="modal" data-target="#modal-delete" style="cursor: pointer;">
+                                                                    <i class="fas fa-trash"></i> Delete
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <!-- Print Button -->
+                                    <button type="button" class="btn btn-a mt-4 no-printable" onclick="printDiv()">
+                                        <i class="fa fa-print mr-2"></i>Print Data
+                                    </button>
+                                    
+                                    <!-- Change Class Button -->
+                                    <button type="button" class="btn btn-a mt-4" data-toggle="modal" data-target="#modal-change-class">
+                                        <i class="fas fa-exchange-alt mr-2"></i>Change Class
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="float-left">Class Schedule</h5>
+                                    <a data-collapse="#mycard-collapse-2" class="btn btn-icon btn-a float-right" href="#">
+                                        <i class="fas fa-minus"></i>
+                                    </a>
+                                </div>
+                                
+                                <div class="card-body collapse show" id="mycard-collapse-2">
+                                    <!-- <section class="add-task-container">
+                                        <input type="text" maxlength="20" id="taskText" placeholder="New Subject..." onkeydown="if (event.keyCode == 13)
+                                            document.getElementById('add').click()">
+                                        <button id="add" class="button add-button" onclick="addTask()">Add Subject</button>
+                                    </section> -->
+
+                                    <!-- Add Subject Button -->
+                                    <button type="button" class="btn btn-b" data-toggle="modal" data-target="#modal-add-subject">
+                                        <i class="fa fa-plus mr-2"></i>Add Subject
+                                    </button>
+
+                                    <ul class="columns">
+                                        <div class="row">
+                                            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mt-3">
+                                                <li class="column-day">
+                                                    <div class="column-day-header">
+                                                        <h4>Monday</h4>
+                                                    </div>
+                                                    <ul class="schedule-list" id="monday">
+                                                        <li class="schedule">
+                                                            <div class="card card-widget-4 bg-theme mb-2">
+                                                                <div class="card-wrap">
+                                                                    <div class="card-header">
+                                                                        <h4 class="text-white float-left">Mathematics</h4>
+                                                                    </div>
+                                                                    <div class="dropdown d-inline">
+                                                                        <a href="#" class="link-a" data-toggle="dropdown">
+                                                                            <i class="fas fa-ellipsis-h"></i>
+                                                                        </a>
+                                                                        <div class="dropdown-menu">
+                                                                            <a class="dropdown-item has-icon" data-toggle="modal" data-target="#modal-view-subject" style="cursor: pointer;">
+                                                                                <i class="fas fa-book"></i> Details
+                                                                            </a>
+
+                                                                            <a class="dropdown-item has-icon" data-toggle="modal" data-target="#modal-edit-subject" style="cursor: pointer;">
+                                                                                <i class="far fa-edit"></i> Edit
+                                                                            </a>
+
+                                                                            <a class="dropdown-item has-icon text-danger" data-toggle="modal" data-target="#modal-delete" style="cursor: pointer;">
+                                                                                <i class="fas fa-trash"></i> Delete
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="clearfix"></div>
+
+                                                                    <div class="card-body">
+                                                                        <!-- <i class="fas fa-user-tie text-white mr-1"></i>
+                                                                        Elly Harjani
+                                                                        <br/> -->
+                                                                        <i class="far fa-clock text-white mr-1"></i>
+                                                                        07.00 - 08.45
+
+                                                                        <!-- <div class="mt-1">
+                                                                            <button class="btn btn-action-xs bg-transparent" data-toggle="modal" data-target="#modal-view-subject" style="cursor: pointer;">
+                                                                                <i class="fas fa-book"></i>
+                                                                            </button>
+
+                                                                            <button class="btn btn-action-xs bg-transparent" data-toggle="modal" data-target="#modal-edit-subject" style="cursor: pointer;">
+                                                                                <i class="far fa-edit"></i>
+                                                                            </button>
+
+                                                                            <button class="btn btn-action-xs bg-transparent" data-toggle="modal" data-target="#modal-delete" style="cursor: pointer;">
+                                                                                <i class="fas fa-trash"></i>
+                                                                            </button>
+                                                                        </div> -->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </div>
+                                            
+                                            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mt-3">
+                                                <li class="column-day">
+                                                    <div class="column-day-header">
+                                                        <h4>Tuesday</h4>
+                                                    </div>
+                                                    <ul class="schedule-list" id="tuesday">
+                                                        <li class="schedule">
+                                                            <div class="card card-widget-4 bg-theme mb-2">
+                                                                <div class="card-wrap">
+                                                                    <div class="card-header">
+                                                                        <h4 class="text-white float-left">Physics</h4>
+                                                                    </div>
+                                                                    <div class="dropdown d-inline">
+                                                                        <a href="#" class="link-a" data-toggle="dropdown">
+                                                                            <i class="fas fa-ellipsis-h"></i>
+                                                                        </a>
+                                                                        <div class="dropdown-menu">
+                                                                            <a class="dropdown-item has-icon" data-toggle="modal" data-target="#modal-view-subject" style="cursor: pointer;">
+                                                                                <i class="fas fa-book"></i> Details
+                                                                            </a>
+
+                                                                            <a class="dropdown-item has-icon" data-toggle="modal" data-target="#modal-edit-subject" style="cursor: pointer;">
+                                                                                <i class="far fa-edit"></i> Edit
+                                                                            </a>
+
+                                                                            <a class="dropdown-item has-icon text-danger" data-toggle="modal" data-target="#modal-delete" style="cursor: pointer;">
+                                                                                <i class="fas fa-trash"></i> Delete
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="clearfix"></div>
+
+                                                                    <div class="card-body">
+                                                                        <!-- <i class="fas fa-user-tie text-white mr-1"></i>
+                                                                        Elly Harjani
+                                                                        <br/> -->
+                                                                        <i class="far fa-clock text-white mr-1"></i>
+                                                                        07.00 - 08.45
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </div>
+                                            
+                                            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mt-3">
+                                                <li class="column-day">
+                                                    <div class="column-day-header">
+                                                        <h4>Wednesday</h4>
+                                                    </div>
+                                                    <ul class="schedule-list" id="wednesday">
+                                                        <li class="schedule">
+                                                            <div class="card card-widget-4 bg-theme mb-2">
+                                                                <div class="card-wrap">
+                                                                    <div class="card-header">
+                                                                        <h4 class="text-white float-left">Computer</h4>
+                                                                    </div>
+                                                                    <div class="dropdown d-inline">
+                                                                        <a href="#" class="link-a" data-toggle="dropdown">
+                                                                            <i class="fas fa-ellipsis-h"></i>
+                                                                        </a>
+                                                                        <div class="dropdown-menu">
+                                                                            <a class="dropdown-item has-icon" data-toggle="modal" data-target="#modal-view-subject" style="cursor: pointer;">
+                                                                                <i class="fas fa-book"></i> Details
+                                                                            </a>
+
+                                                                            <a class="dropdown-item has-icon" data-toggle="modal" data-target="#modal-edit-subject" style="cursor: pointer;">
+                                                                                <i class="far fa-edit"></i> Edit
+                                                                            </a>
+
+                                                                            <a class="dropdown-item has-icon text-danger" data-toggle="modal" data-target="#modal-delete" style="cursor: pointer;">
+                                                                                <i class="fas fa-trash"></i> Delete
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="clearfix"></div>
+
+                                                                    <div class="card-body">
+                                                                        <!-- <i class="fas fa-user-tie text-white mr-1"></i>
+                                                                        Buyung Narendra
+                                                                        <br/> -->
+                                                                        <i class="far fa-clock text-white mr-1"></i>
+                                                                        07.00 - 08.45
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </div>
+                                            
+                                            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mt-3">
+                                                <li class="column-day">
+                                                    <div class="column-day-header">
+                                                        <h4>Thursday</h4>
+                                                    </div>
+                                                    <ul class="schedule-list" id="thursday">
+                                                        <li class="schedule">
+                                                            <div class="card card-widget-4 bg-theme mb-2">
+                                                                <div class="card-wrap">
+                                                                    <div class="card-header">
+                                                                        <h4 class="text-white float-left">B.Indonesia</h4>
+                                                                    </div>
+                                                                    <div class="dropdown d-inline">
+                                                                        <a href="#" class="link-a" data-toggle="dropdown">
+                                                                            <i class="fas fa-ellipsis-h"></i>
+                                                                        </a>
+                                                                        <div class="dropdown-menu">
+                                                                            <a class="dropdown-item has-icon" data-toggle="modal" data-target="#modal-view-subject" style="cursor: pointer;">
+                                                                                <i class="fas fa-book"></i> Details
+                                                                            </a>
+
+                                                                            <a class="dropdown-item has-icon" data-toggle="modal" data-target="#modal-edit-subject" style="cursor: pointer;">
+                                                                                <i class="far fa-edit"></i> Edit
+                                                                            </a>
+
+                                                                            <a class="dropdown-item has-icon text-danger" data-toggle="modal" data-target="#modal-delete" style="cursor: pointer;">
+                                                                                <i class="fas fa-trash"></i> Delete
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="clearfix"></div>
+
+                                                                    <div class="card-body">
+                                                                        <!-- <i class="fas fa-user-tie text-white mr-1"></i>
+                                                                        Natalia
+                                                                        <br/> -->
+                                                                        <i class="far fa-clock text-white mr-1"></i>
+                                                                        07.00 - 08.45
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </div>
+                                            
+                                            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mt-3">
+                                                <li class="column-day">
+                                                    <div class="column-day-header">
+                                                        <h4>Friday</h4>
+                                                    </div>
+                                                    <ul class="schedule-list" id="friday">
+                                                        <li class="schedule">
+                                                            <div class="card card-widget-4 bg-theme mb-2">
+                                                                <div class="card-wrap">
+                                                                    <div class="card-header">
+                                                                        <h4 class="text-white float-left">Biology</h4>
+                                                                    </div>
+                                                                    <div class="dropdown d-inline">
+                                                                        <a href="#" class="link-a" data-toggle="dropdown">
+                                                                            <i class="fas fa-ellipsis-h"></i>
+                                                                        </a>
+                                                                        <div class="dropdown-menu">
+                                                                            <a class="dropdown-item has-icon" data-toggle="modal" data-target="#modal-view-subject" style="cursor: pointer;">
+                                                                                <i class="fas fa-book"></i> Details
+                                                                            </a>
+
+                                                                            <a class="dropdown-item has-icon" data-toggle="modal" data-target="#modal-edit-subject" style="cursor: pointer;">
+                                                                                <i class="far fa-edit"></i> Edit
+                                                                            </a>
+
+                                                                            <a class="dropdown-item has-icon text-danger" data-toggle="modal" data-target="#modal-delete" style="cursor: pointer;">
+                                                                                <i class="fas fa-trash"></i> Delete
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="clearfix"></div>
+
+                                                                    <div class="card-body">
+                                                                        <!-- <i class="fas fa-user-tie text-white mr-1"></i>
+                                                                        Anik Wulandari
+                                                                        <br/> -->
+                                                                        <i class="far fa-clock text-white mr-1"></i>
+                                                                        07.00 - 08.45
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </div>
+                                            
+                                            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mt-3">
+                                                <li class="column-day">
+                                                    <div class="column-day-header">
+                                                        <h4>Saturday</h4>
+                                                    </div>
+                                                    <ul class="schedule-list" id="saturday">
+                                                        <li class="schedule">
+                                                            <div class="card card-widget-4 bg-theme mb-2">
+                                                                <div class="card-wrap">
+                                                                    <div class="card-header">
+                                                                        <h4 class="text-white float-left">Mathematics</h4>
+                                                                    </div>
+                                                                    <div class="dropdown d-inline">
+                                                                        <a href="#" class="link-a" data-toggle="dropdown">
+                                                                            <i class="fas fa-ellipsis-h"></i>
+                                                                        </a>
+                                                                        <div class="dropdown-menu">
+                                                                            <a class="dropdown-item has-icon" data-toggle="modal" data-target="#modal-view-subject" style="cursor: pointer;">
+                                                                                <i class="fas fa-book"></i> Details
+                                                                            </a>
+
+                                                                            <a class="dropdown-item has-icon" data-toggle="modal" data-target="#modal-edit-subject" style="cursor: pointer;">
+                                                                                <i class="far fa-edit"></i> Edit
+                                                                            </a>
+
+                                                                            <a class="dropdown-item has-icon text-danger" data-toggle="modal" data-target="#modal-delete" style="cursor: pointer;">
+                                                                                <i class="fas fa-trash"></i> Delete
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="clearfix"></div>
+
+                                                                    <div class="card-body">
+                                                                        <!-- <i class="fas fa-user-tie text-white mr-1"></i>
+                                                                        Elly Harjani
+                                                                        <br/> -->
+                                                                        <i class="far fa-clock text-white mr-1"></i>
+                                                                        07.00 - 08.45
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </ul>
+
+                                    <div class="col-12 text-center">
+                                         <button class="btn btn-a" data-toggle="modal" data-target="#modal-clear-all">
+                                            <i class="fas fa-trash mr-2"></i>Clear All
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="float-left">Student Score</h5>
+                                    <a data-collapse="#mycard-collapse-3" class="btn btn-icon btn-a float-right" href="#">
+                                        <i class="fas fa-minus"></i>
+                                    </a>
+                                </div>
+                                
+                                <div class="card-body collapse show" id="mycard-collapse-3">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped" id="table-1">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Subject</th>
+                                                    <th>Score Lists</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>
+                                                        Mathematics
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-a" data-toggle="modal" data-target="#modal-score">
+                                                            <i class="fas fa-file-alt mr-2"></i>Details
+                                                        </button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>
+                                                        Physics
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-a" data-toggle="modal" data-target="#modal-score">
+                                                            <i class="fas fa-file-alt mr-2"></i>Details
+                                                        </button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>
+                                                        Computer
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-a" data-toggle="modal" data-target="#modal-score">
+                                                            <i class="fas fa-file-alt mr-2"></i>Details
+                                                        </button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>
+                                                        B.Indonesia
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-a" data-toggle="modal" data-target="#modal-score">
+                                                            <i class="fas fa-file-alt mr-2"></i>Details
+                                                        </button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>
+                                                        Biology
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-a" data-toggle="modal" data-target="#modal-score">
+                                                            <i class="fas fa-file-alt mr-2"></i>Details
+                                                        </button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>
+                                                        Mathematics
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-a" data-toggle="modal" data-target="#modal-score">
+                                                            <i class="fas fa-file-alt mr-2"></i>Details
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <footer class="main-footer">
+                <div class="footer-left">
+                    Copyright &copy; 2019 | 
+                </div>
+                <div class="footer-right">
+                    1.0.0
+                </div>
+            </footer>
+        </div>
+
+
+        <!-- MODAL BOXES -->
+        <!-- Modal Edit Student Class -->
+        <div class="modal animated fadeIn" id="modal-edit-student-class" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">
+                                <i class="ion-android-close"></i>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <h5 class="text-sm text-black font-weight-semibold">
+                            <i class="fas fa-user-cog text-theme mr-2"></i>Edit student class
+                        </h5>
+                        <form>
+                            <div class="row mt-4">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label>Class</label>
+                                        <select class="form-control">
+                                            <option>Select Class</option>
+                                            <option>X Science 1</option>
+                                            <option>X Science 2</option>
+                                            <option>X Social 1</option>
+                                            <option>X Social 2</option>
+                                            <option>X Social 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label>Status</label>
+                                        <div class="selectgroup w-100">
+                                            <label class="selectgroup-item">
+                                                <input type="radio" name="value" value="50" class="selectgroup-input" checked="">
+                                                <span class="selectgroup-button">Active</span>
+                                            </label>
+                                            <label class="selectgroup-item">
+                                                <input type="radio" name="value" value="100" class="selectgroup-input">
+                                                <span class="selectgroup-button">Inactive</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary btn-round">Save</button>
+                        <button type="submit" class="btn btn-outline-light btn-round" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Add Subject -->
+        <div class="modal animated fadeIn" id="modal-add-subject" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">
+                                <i class="ion-android-close"></i>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <h5 class="text-sm text-black font-weight-semibold">
+                            <i class="fas fa-book text-theme mr-2"></i>Add New Subject
+                        </h5>
+                        <form>
+                            <div class="row mt-4">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label>Subject Title</label>
+                                        <input type="text" class="form-control" id="subjectTitle">
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label>Staff Teacher</label>
+                                        <select class="form-control">
+                                            <option>Select Teacher</option>
+                                            <option>Elly Harjani</option>
+                                            <option>Tjandarajani Moeljopranoto</option>
+                                            <option>Buyung Narendra</option>
+                                            <option>Anik Wulandari</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label>Day</label>
+                                        <select class="form-control">
+                                            <option>Select Day</option>
+                                            <option>Monday</option>
+                                            <option>Tuesday</option>
+                                            <option>Wednesday</option>
+                                            <option>Thursday</option>
+                                            <option>Friday</option>
+                                            <option>Saturday</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <label>Start Time</label>
+                                        <input type="time" class="form-control" id="startTime">
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <label>End Time</label>
+                                        <input type="time" class="form-control" id="endTime">
+                                    </div>
+                                </div>                                 
+                            </div>  
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary btn-round">Add</button>
+                        <button type="submit" class="btn btn-outline-light btn-round" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Edit Subject -->
+        <div class="modal animated fadeIn" id="modal-edit-subject" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">
+                                <i class="ion-android-close"></i>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <h5 class="text-sm text-black font-weight-semibold">
+                            <i class="far fa-edit text-theme mr-2"></i>Edit Subject
+                        </h5>
+                        <form>
+                            <div class="row mt-4">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label>Subject Title</label>
+                                        <input type="text" class="form-control" id="subjectTitle">
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label>Staff Teacher</label>
+                                        <select class="form-control">
+                                            <option>Select Teacher</option>
+                                            <option>Elly Harjani</option>
+                                            <option>Tjandarajani Moeljopranoto</option>
+                                            <option>Buyung Narendra</option>
+                                            <option>Anik Wulandari</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <label>Start Time</label>
+                                        <input type="time" class="form-control" id="startTime">
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <label>End Time</label>
+                                        <input type="time" class="form-control" id="endTime">
+                                    </div>
+                                </div>                                 
+                            </div>  
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary btn-round">Save</button>
+                        <button type="submit" class="btn btn-outline-light btn-round" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- Modal View Subject -->
+        <div class="modal animated fadeIn" id="modal-view-subject" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">
+                                <i class="ion-android-close"></i>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <h5 class="text-sm text-black font-weight-semibold">
+                            <i class="fas fa-book text-theme mr-2"></i>Subject Details
+                        </h5>
+                        <form>
+                            <div class="row mt-4">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label>Subject Title</label>
+                                        <h5 class="text-sm font-weight-semibold text-black">Mathematics</h5>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label>Staff Teacher</label>
+                                        <h5 class="text-sm font-weight-semibold text-black">Elly Harjani</h5>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <label>Start Time</label>
+                                        <h5 class="text-sm font-weight-semibold text-black">07.00</h5>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <label>End Time</label>
+                                        <h5 class="text-sm font-weight-semibold text-black">08.45</h5>
+                                    </div>
+                                </div>                                 
+                            </div>  
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-outline-light btn-round" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- Modal Change CLass -->
+        <div class="modal animated fadeIn" id="modal-change-class" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">
+                                <i class="ion-android-close"></i>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <h5 class="text-sm text-black font-weight-semibold">
+                            <i class="fas fa-exchange-alt text-theme mr-2"></i>Change Class
+                        </h5>
+                        <form>
+                            <div class="row mt-4">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label>Current Class</label>
+                                        <h5 class="text-sm font-weight-semibold text-black">X-Social-1</h5>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label>New CLass</label>
+                                        <select class="form-control">
+                                            <option>XI-Social-1</option>
+                                            <option>XI-Social-2</option>
+                                            <option>XI-Social-3</option>
+                                        </select>
+                                    </div>
+                                </div>                     
+                            </div>  
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary btn-round">Save</button>
+                        <button type="submit" class="btn btn-outline-light btn-round" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Score List -->
+        <div class="modal animated fadeIn" id="modal-score" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">
+                                <i class="ion-android-close"></i>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <h5 class="text-sm text-black font-weight-semibold">
+                            <i class="fas fa-file-alt text-theme mr-2"></i>Score Lists
+                        </h5>
+                        <h4 class="text-sm text-black font-weight-light my-3">
+                            Mathematics
+                        </h4>
+                        <form method="" onSubmit="return false">
+                            <div class="table-responsive">
+                                <table class="table table-striped" id="table-1">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Full Name</th>
+                                            <th>
+                                                Assignment
+                                            </th>
+                                            <th>
+                                                <button class="btn btn-action-sm">
+                                                    <i class="fas fa-plus"></i>
+                                                </button>
+                                            </th>
+                                            <th class="no-printable">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="2">Percentage</td>
+                                            <td>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" style="width: 40px">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">
+                                                            <i class="fas fa-percentage"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                               1
+                                            </td>
+                                            <td>Chandra Wijaya</td>
+                                            <td>
+                                                <div class="box-editable">
+                                                    <div class="text-editable">
+                                                        <h5 class="text-sm font-weight-light text-black">0</h5>
+                                                    </div>
+                                                </div>
+                                                <!-- <input type="text" class="form-control" name="" placeholder="0" style="width:80px;">  -->
+                                            </td>
+                                            <td>
+                                                
+                                            </td>
+                                            <td class="no-printable">
+                                                <div class="dropdown d-inline">
+                                                    <button class="btn btn-action" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="fas fa-ellipsis-v"></i>
+                                                    </button>
+
+                                                    <span class="save">
+                                                        <button class="btn btn-action-sm">
+                                                            <i class="fa fa-check mr-1"></i>
+                                                        </button>
+                                                    </span>
+
+                                                    <div class="dropdown-menu">
+                                                        <span class="edit">
+                                                            <a class="dropdown-item has-icon"style="cursor: pointer;">
+                                                                <i class="far fa-edit"></i> Edit
+                                                            </a>
+                                                        </span>
+
+                                                        <a class="dropdown-item has-icon text-danger" data-toggle="modal" data-target="#modal-delete" style="cursor: pointer;">
+                                                            <i class="fas fa-trash"></i> Delete
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                               2
+                                            </td>
+                                            <td>Farell Bensona</td>
+                                            <td>
+                                                <div class="box-editable">
+                                                    <div class="text-editable">
+                                                        <h5 class="text-sm font-weight-light text-black">0</h5>
+                                                    </div>
+                                                </div>
+                                                <!-- <input type="text" class="form-control" name="" placeholder="0" style="width:80px;"> --> 
+                                            </td>
+                                            <td>
+                                                
+                                            </td>
+                                            <td class="no-printable">
+                                                <div class="dropdown d-inline">
+                                                    <button class="btn btn-action" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="fas fa-ellipsis-v"></i>
+                                                    </button>
+
+                                                    <span class="save">
+                                                        <button class="btn btn-action-sm">
+                                                            <i class="fa fa-check mr-1"></i>
+                                                        </button>
+                                                    </span>
+
+                                                    <div class="dropdown-menu">
+                                                        <span class="edit">
+                                                            <a class="dropdown-item has-icon"style="cursor: pointer;">
+                                                                <i class="far fa-edit"></i> Edit
+                                                            </a>
+                                                        </span>
+
+                                                        <a class="dropdown-item has-icon text-danger" data-toggle="modal" data-target="#modal-delete" style="cursor: pointer;">
+                                                            <i class="fas fa-trash"></i> Delete
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <!-- <tr>
+                                            <td>
+                                                <input type="text" class="form-control" placeholder="new input">
+                                            </td>
+
+                                            <td>
+                                                <input type="text" class="form-control" placeholder="new input">
+                                            </td>
+
+                                            <td>
+                                                <input type="text" class="form-control" placeholder="new input">
+                                            </td>
+
+                                            <td>
+                                                <input type="text" class="form-control" placeholder="new input">
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>
+                                                <button class="btn btn-action-sm no-printable ml-1">
+                                                    <i class="fas fa-plus"></i>
+                                                </button>
+                                            </th>
+                                        </tr> -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary btn-round">Save</button>
+                        <button type="submit" class="btn btn-outline-light btn-round" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Delete -->
+        <div class="modal animated fadeIn" id="modal-delete" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">
+                                <i class="ion-android-close"></i>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <h5 class="text-sm text-black font-weight-semibold">Are you sure want to delete?</h5>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-danger btn-round">Yes, delete</button>
+                        <button type="submit" class="btn btn-outline-light btn-round" data-dismiss="modal">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Clear All -->
+        <div class="modal animated fadeIn" id="modal-clear-all" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">
+                                <i class="ion-android-close"></i>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <h5 class="text-sm text-black font-weight-semibold">Are you sure want clear all schedule?</h5>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-danger btn-round" data-dismiss="modal" onclick="emptyTrash()">Yes, Clear</button>
+                        <button class="btn btn-outline-light btn-round" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /MODAL BOXES -->
+    </div>
+
+    <!-- General JS Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js"></script>
+    <script src="../../assets/js/base.js"></script>
+
+    <!-- JS Modules -->
+    <script src="../../node_modules/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <script src="../../node_modules/chart.js/dist/Chart.min.js"></script>
+    <script src="../../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="../../node_modules/summernote/dist/summernote-bs4.js"></script>
+    <script src="../../node_modules/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="../../node_modules/datatables.net-bs4/js/dataTables.bootstrap4.js"></script>
+    <script src="../../node_modules/datatables.net-select-bs4/js/select.bootstrap4.min.js"></script>
+    <script src="../../node_modules/jquery-ui-dist/jquery-ui.min.js"></script>
+
+    <!-- JS Assets -->
+    <script src="../../assets/js/scripts.js"></script>
+    <script src="../../assets/js/custom.js"></script>
+
+    <!-- External JS -->
+    <script src="../../assets/js/external/animate-item.js"></script>
+    <script src="../../assets/js/external/editable-text.js"></script>
+    <script src="../../assets/js/external/printable.js"></script>
+    <script src="../../assets/js/external/dragable.js"></script>
+
+    <!-- Page Specific JS File -->
+    <script src="../../assets/js/page/index.js"></script>
+    <script src="../../assets/js/page/modules-datatables.js"></script>
+</body>
+</html>

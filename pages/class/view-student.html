@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+    <title>Academics Dashboard - Profile</title>
+
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/logo-icon.png">
+
+    <!-- CSS Modules -->
+    <link rel="stylesheet" href="../../node_modules/jqvmap/dist/jqvmap.min.css">
+    <link rel="stylesheet" href="../../node_modules/summernote/dist/summernote-bs4.css">
+    <link rel="stylesheet" href="../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../../node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="../../node_modules/datatables.net-select-bs4/css/select.bootstrap4.min.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="../../node_modules/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-timepicker/css/bootstrap-timepicker.min.css">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../../assets/css/external/animate-item.css">
+
+    <!-- CSS Assets -->
+    <link rel="stylesheet" href="../../assets/components/fontawesome-free-5.10.1/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/components/Ionicons/css/Ionicons.min.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/components.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="main-wrapper">
+            <div class="navbar-bg"></div>
+            <nav class="navbar navbar-expand-lg main-navbar">
+                <form class="form-inline mr-auto">
+                    <ul class="navbar-nav mr-3">
+                        <li>
+                            <a href="#" data-toggle="sidebar" class="nav-link nav-link-lg">
+                                <i class="fas fa-stream"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </form>
+
+                <ul class="navbar-nav navbar-right">
+                    <li class="dropdown dropdown-list-toggle">
+                        <a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg beep">
+                            <i class="far fa-bell"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-list dropdown-menu-right">
+                            <div class="dropdown-header">Notifications
+                                <div class="float-right">
+                                    <a href="#">Mark All As Read</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-list-content dropdown-list-icons">
+                                <a href="#" class="dropdown-item dropdown-item-unread">
+                                    <div class="dropdown-item-icon bg-primary text-white">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <div class="dropdown-item-desc">
+                                        Template update is available now!
+                                        <div class="time text-primary">2 Min Ago</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <div class="dropdown-item-icon bg-info text-white">
+                                        <i class="far fa-user"></i>
+                                    </div>
+                                    <div class="dropdown-item-desc">
+                                        <b>You</b> and <b>Dedik Sugiharto</b> are now friends
+                                        <div class="time">10 Hours Ago</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dropdown-footer text-center">
+                                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                            <img alt="image" src="../../assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
+                            <div class="d-sm-none d-lg-inline-block">Farell Sujanto</div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="dropdown-title">Logged in 5 min ago</div>
+                            <a href="features-profile.html" class="dropdown-item has-icon">
+                                <i class="fas fa-user-cog"></i> Profile
+                            </a>
+                            <a href="features-activities.html" class="dropdown-item has-icon">
+                                <i class="fas fa-bolt"></i> Activities
+                            </a>
+                            <a href="features-settings.html" class="dropdown-item has-icon">
+                                <i class="fas fa-cog"></i> Settings
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item has-icon text-danger">
+                                <i class="fas fa-sign-out-alt"></i> Logout
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="main-sidebar">
+                <aside id="sidebar-wrapper">
+                    <div class="sidebar-brand">
+                        <a href="index.html">Academic</a>
+                    </div>
+                    <div class="sidebar-brand sidebar-brand-sm">
+                        <a href="index.html">AD</a>
+                    </div>
+
+                    <ul class="sidebar-menu">
+                        <li class="menu-header">Menu</li>
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link">
+                                <i class="fas fa-chart-bar"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="lists.html">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <span>Class</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown">
+                                <i class="fas fa-user"></i> 
+                                <span>Management</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="nav-link" href="../staffs/lists.html">
+                                    Staffs
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="../students/lists.html">
+                                    Students
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="../parents/lists..html">
+                                    Parents
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="payments.html">
+                                <i class="fas fa-file-invoice"></i> 
+                                <span>Payments</span>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+
+            
+            <!-- Main Content -->
+            <div class="main-content">
+                <section class="section">
+                    <div class="section-header">
+                        <h1>
+                           <i class="fas fa-users mr-2"></i>
+                            Students Management
+                        </h1>
+                    </div>
+                    
+                    <div class="row mt-4">
+                        <div class="col-12 col-md-4 mb-4">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item">
+                                        <a href="view-class.html">Class X-Social-1</a>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page">Profile</li>
+                                </ol>
+                            </nav>
+                        </div>
+
+                        <div class="col-12" id="printableSection">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5>Profile</h5>
+
+                                    <!-- Print Button -->
+                                    <button type="button" class="btn btn-a mt-4 no-printable" onclick="printDiv()">
+                                        <i class="fa fa-print mr-2"></i>Print Data
+                                    </button>
+                                </div>
+
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <div class="card profile-widget px-4">
+                                                <ul class="list-unstyled user-progress list-unstyled-border list-unstyled-noborder">
+                                                    <li class="media">
+                                                        <img alt="image" class="rounded-circle" width="70" src="../../assets/img/avatar/avatar-1.png">
+                                                        <button class="btn btn-action-sm no-printable" data-toggle="modal" data-target="#modal-edit-pp" style="margin-left: -1em;">
+                                                            <i class="far fa-edit"></i>
+                                                        </button>
+
+                                                        <div class="media-body ml-3">
+                                                            <div class="media-title">
+                                                                Juan Ryanto
+                                                            </div>
+
+                                                            <div class="text-job text-muted">
+                                                                X-Science-1
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- <span class="save">
+                                                            <button class="btn btn-action">
+                                                                <i class="fa fa-check mr-1"></i>Save
+                                                            </button>
+                                                        </span> -->
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <form method="" onSubmit="return false" class="needs-validation" novalidate="">
+                                                <div class="card-header">
+                                                    <span class="edit float-right">
+                                                        <button class="btn btn-a mt-2">
+                                                            <i class="far fa-edit"></i> 
+                                                        </button>
+                                                    </span>
+
+                                                    <span class="save float-right">
+                                                        <button class="btn btn-a mt-2">
+                                                            <i class="fa fa-check mr-1"></i>Save
+                                                        </button>
+                                                    </span>
+                                                    <h4>Profile Details</h4>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-12">
+                                                            <div class="form-group">
+                                                                <label>First Name</label>
+                                                                <div class="box-editable">
+                                                                    <div class="text-editable">
+                                                                        <h5 class="text-sm font-weight-semibold text-black">Juan</h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-12">
+                                                            <div class="form-group">
+                                                                <label>Last Name</label>
+                                                                <div class="box-editable">
+                                                                    <div class="text-editable">
+                                                                        <h5 class="text-sm font-weight-semibold text-black">Ryanto</h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="form-group">
+                                                                <label>NIS</label>
+                                                                <div class="box-editable">
+                                                                    <div class="text-editable">
+                                                                        <h5 class="text-sm font-weight-semibold text-black">019875278011</h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12">
+                                                            <div class="form-group">
+                                                                <label>Birth Date</label>
+                                                                <div class="row">
+                                                                    <div class="col-4">
+                                                                        <div class="box-editable">
+                                                                            <div class="text-editable">
+                                                                                <h5 class="text-sm font-weight-semibold text-black">2000</h5>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-4">
+                                                                        <div class="box-editable">
+                                                                            <div class="text-editable">
+                                                                                <h5 class="text-sm font-weight-semibold text-black">10</h5>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-4">
+                                                                        <div class="box-editable">
+                                                                            <div class="text-editable">
+                                                                                <h5 class="text-sm font-weight-semibold text-black">25</h5>
+                                                                            </div>
+                                                                        </div> 
+                                                                    </div>
+                                                                    <!-- <div class="box-editable">
+                                                                        <div class="text-editable">
+                                                                            <span class="input">
+                                                                                <input class="form-control" type="date">
+                                                                            </span>
+                                                                        </div>
+                                                                    </div> -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12">
+                                                            <div class="form-group">
+                                                                <label>Address</label>
+                                                                <div class="box-editable">
+                                                                    <div class="text-editable">
+                                                                        <h5 class="text-sm font-weight-semibold text-black">Jl.Meteseh 5 No.78 Banyumanik,Semarang</h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12">
+                                                            <div class="form-group">
+                                                                <label>Phone Number</label>
+                                                                <div class="box-editable">
+                                                                    <div class="text-editable">
+                                                                        <h5 class="text-sm font-weight-semibold text-black">
+                                                                        +62 813267790451
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12">
+                                                            <div class="form-group">
+                                                                <label>Email Address</label>
+                                                                <div class="box-editable">
+                                                                    <div class="text-editable">
+                                                                        <h5 class="text-sm font-weight-semibold text-black">ryanotaku@gmail.com</h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 col-sm-6">
+                                                            <div class="form-group">
+                                                                <label>Class</label>
+                                                                <h5 class="text-sm font-weight-semibold text-black">X-Science-1</h5>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 col-sm-6">
+                                                            <div class="form-group">
+                                                                <label>Status</label>
+                                                                <h5>
+                                                                    <div class="badge badge-success">
+                                                                        Active
+                                                                    </div>
+                                                                </h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-footer no-printable">
+                                                    <button type="button" class="btn btn-primary btn-round" data-toggle="modal" data-target="#modal-edit-student-profile">
+                                                        <i class="far fa-edit mr-1"></i>Edit Profile
+                                                    </button>
+
+                                                    <button type="button" class="btn btn-outline-light btn-round" data-toggle="modal" data-target="#modal-delete">
+                                                        <i class="fas fa-trash mr-1 text-danger"></i>Delete User
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                        <div class="col-12 col-lg-6 no-printable">
+                                            <div class="card">
+                                                <h5 class="title-lg font-weight-normal text-black mb-4">Activites</h5>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="activities">
+                                                            <div class="activity px-3">
+                                                                <div class="activity-icon bg-theme text-white">
+                                                                    <i class="fas fa-image"></i>
+                                                                </div>
+                                                                <div class="mb-2">
+                                                                    <div class="mb-2">
+                                                                        <span class="text-job text-primary">2 min ago</span>
+                                                                        <span class="bullet"></span>
+                                                                        <a class="text-job" href="#">View</a>
+                                                                        <div class="float-right dropdown">
+                                                                            <a href="#" data-toggle="dropdown">
+                                                                                <i class="fas fa-ellipsis-h"></i>
+                                                                            </a>
+                                                                            <div class="dropdown-menu">
+                                                                                <a href="#" class="dropdown-item has-icon text-danger" data-toggle="modal" data-target="#modal-delete">
+                                                                                    <i class="fas fa-trash-alt"></i> Delete
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <p>Change Profile Picture.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="buttons">
+                                                <nav aria-label="Page navigation example">
+                                                    <ul class="pagination">
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#" aria-label="Previous">
+                                                                <span aria-hidden="true">&laquo;</span>
+                                                                <span class="sr-only">Previous</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#" aria-label="Next">
+                                                                <span aria-hidden="true">&raquo;</span>
+                                                                <span class="sr-only">Next</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <footer class="main-footer">
+                <div class="footer-left">
+                    Copyright &copy; 2019 | 
+                </div>
+                <div class="footer-right">
+                    1.0.0
+                </div>
+            </footer>
+        </div>
+            
+
+        <!-- MODAL BOXES -->
+        <!-- Modal Edit Profile Photo -->
+        <div class="modal fade" id="modal-edit-pp" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">
+                                <i class="ion-android-close"></i>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <h5 class="text-sm text-black font-weight-semibold">
+                            <i class="fas fa-file-image text-theme mr-2"></i>Edit Profile Photo
+                        </h5>
+                        <form>
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <img src="../../assets/img/avatar/avatar-1.png" class="mb-4 rounded-circle" width="80">
+                                    <div class="profile">
+                                        <h5 class="text-sm font-weight-normal text-black">
+                                            <i class="fa fa-image mr-1"></i>Change Photo
+                                        </h5>
+                                        <div class="photo">
+                                            <input type="file" accept="image/*">
+                                            <div class="photo__helper">
+                                                <div class="photo__frame photo__frame--circle">
+                                                    <canvas class="photo__canvas"></canvas>
+                                                    <div class="message is-empty">
+                                                        <p class="message--desktop">
+                                                            Drop your photo to replace.
+                                                        </p>
+                                                        <!-- <p class="message--mobile">Tap here to select your picture.</p> -->
+                                                    </div>
+
+                                                    <div class="message is-loading">
+                                                        <i class="fa fa-2x fa-spin fa-spinner"></i>
+                                                    </div>
+                                                    <div class="message is-dragover">
+                                                        <i class="fa fa-2x fa-cloud-upload"></i>
+                                                        <p>Drop your photo</p>
+                                                    </div>
+                                                    <div class="message is-wrong-file-type">
+                                                        <p>Only images allowed.</p>
+                                                        <p class="message--desktop">Drop your photo here or browse your computer.</p>
+                                                        <p class="message--mobile">Tap here to select your picture.</p>
+                                                    </div>
+                                                    <div class="message is-wrong-image-size">
+                                                        <p>Your photo must be larger than 350px.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="photo__options hide">
+                                                <div class="photo__zoom">
+                                                    <input type="range" class="zoom-handler">
+                                                </div>
+                                                <a href="javascript:;" class="remove float-right">
+                                                    <i class="fa fa-trash"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary btn-round">Save</button>
+                        <button class="btn btn-outline-light btn-round" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Edit Student -->
+        <div class="modal animated fadeIn" id="modal-edit-student-profile" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">
+                                <i class="ion-android-close"></i>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <h5 class="text-sm text-black font-weight-semibold">
+                            <i class="fas fa-user-plus text-theme mr-2"></i>Edit Profile
+                        </h5>
+                        <form>
+                            <div class="row mt-4">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label>Class</label>
+                                        <select class="form-control">
+                                            <option>Select Class</option>
+                                            <option>X Science 1</option>
+                                            <option>X Science 2</option>
+                                            <option>X Social 1</option>
+                                            <option>X Social 2</option>
+                                            <option>X Social 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label>Status</label>
+                                        <div class="selectgroup w-100">
+                                            <label class="selectgroup-item">
+                                                <input type="radio" name="value" value="50" class="selectgroup-input" checked="">
+                                                <span class="selectgroup-button">Active</span>
+                                            </label>
+                                            <label class="selectgroup-item">
+                                                <input type="radio" name="value" value="100" class="selectgroup-input">
+                                                <span class="selectgroup-button">Inactive</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary btn-round">Add</button>
+                        <button type="submit" class="btn btn-outline-light btn-round" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Delete -->
+        <div class="modal animated fadeIn" id="modal-delete" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">
+                                <i class="ion-android-close"></i>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <h5 class="text-sm text-black font-weight-semibold">Are you sure want to delete?</h5>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-danger btn-round">Yes, delete</button>
+                        <button type="submit" class="btn btn-outline-light btn-round" data-dismiss="modal">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /MODAL BOXES -->
+    </div>
+
+    <!-- General JS Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="../../assets/js/base.js"></script>
+
+    <!-- JS Modules -->
+    <script src="../../node_modules/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <script src="../../node_modules/chart.js/dist/Chart.min.js"></script>
+    <script src="../../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="../../node_modules/summernote/dist/summernote-bs4.js"></script>
+    <script src="../../node_modules/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="../../node_modules/datatables.net-bs4/js/dataTables.bootstrap4.js"></script>
+    <script src="../../node_modules/datatables.net-select-bs4/js/select.bootstrap4.min.js"></script>
+    <script src="../../node_modules/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="../../node_modules/select2/dist/js/select2.full.min.js"></script>
+    <script src="../../node_modules/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+
+    <!-- JS Assets -->
+    <script src="../../assets/js/scripts.js"></script>
+    <script src="../../assets/js/custom.js"></script>
+    
+    <!-- External JS -->
+    <script src="../../assets/js/external/animate-item.js"></script>
+    <script src="../../assets/js/external/printable.js"></script>
+    <script src="../../assets/js/external/editable-text.js"></script>
+    <script src="../../assets/js/external/image-uploader.js"></script>
+    <script src="../../assets/js/external/image-cropper.js"></script>
+
+    <!-- Page Specific JS File -->
+    <script src="../../assets/js/page/index.js"></script>
+    <script src="../../assets/js/page/modules-datatables.js"></script>
+</body>
+</html>
