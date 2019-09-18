@@ -2108,6 +2108,38 @@ h6 .badge {
   transition: 0.2s;
 }
 
+
+.btn-secondary,
+.btn-secondary.disabled {
+  box-shadow: 0 2px 4px #5f2c82;
+  background-color: #5f2c82;
+  border-color: #5f2c82;
+}
+
+.btn-secondary:focus,
+.btn-secondary.disabled:focus {
+  background-color: #42155F !important;
+  color: white;
+  transition: 0.2s;
+}
+
+.btn-secondary:focus:active,
+.btn-secondary.disabled:focus:active {
+  background-color: #42155F !important;
+  color: white;
+  transition: 0.2s;
+}
+
+.btn-secondary:active,
+.btn-secondary:hover,
+.btn-secondary.disabled:active,
+.btn-secondary.disabled:hover {
+  background-color: #42155F !important;
+  color: white;
+  transition: 0.2s;
+}
+
+
 .btn-outline-primary,
 .btn-outline-primary.disabled {
   border-color: #2e2e2e;
@@ -2976,7 +3008,7 @@ a.dropdown-item.active {
 }
 
 .dropdown-list .dropdown-list-content {
-  height: 350px;
+  height: 200px;
   overflow: hidden;
 }
 
@@ -3416,8 +3448,8 @@ pre {
   background-position: 0 0%;
   -webkit-animation-name: backgroundWalkY;
   animation-name: backgroundWalkY;
-  -webkit-animation-duration: 70s;
-  animation-duration: 70s;
+  -webkit-animation-duration: 50s;
+  animation-duration: 50s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
@@ -3440,8 +3472,8 @@ pre {
   background-position: 0 0%;
   -webkit-animation-name: backgroundWalkX;
   animation-name: backgroundWalkX;
-  -webkit-animation-duration: 70s;
-  animation-duration: 70s;
+  -webkit-animation-duration: 50s;
+  animation-duration: 50s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
@@ -5015,7 +5047,6 @@ li {
 }
 
 /* Dragula CSS Release 3.2.0 from: https://github.com/bevacqua/dragula */
-
 .gu-mirror {
   position: fixed !important;
   margin: 0 !important;
@@ -5051,4 +5082,87 @@ a.link-a {
 
 a.link-a:hover {
   color: #f2f2f2;
+}
+
+
+
+
+/* BACKGROUND */
+.bg-gradient {
+  background-image: linear-gradient(to right, #5f2c82 , #49a09d);
+}
+
+
+
+/* CENTERING CONTENT */
+.vh-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+
+.button-social {
+  width: auto;
+  display: inline-block;
+  padding: 0;
+  border: 0 none;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 250ms linear;
+  color: white;
+  padding: 6px 16px;
+}
+
+.button-social:hover {
+  text-decoration: none;
+  color: white;
+  opacity: 0.7;
+}
+
+
+.button-facebook {
+  background-color: #4b70ab;
+  border: none;
+}
+.button-facebook .icon {
+  border-right: 1px solid #3b5988;
+}
+.button-facebook .icon:after {
+  border-right: 1px solid #6b8bbe;
+}
+.button-facebook:hover {
+  background-color: #436499;
+}
+
+.button-google {
+  background-color: #3F85F4;
+  border: 1px solid #0f66f1;
+}
+.button-google .icon {
+  border-right: 1px solid #0f66f1;
+}
+.button-google .icon:after {
+  border-right: 1px solid #6fa4f7;
+}
+.button-google:hover {
+  background-color: #2776f3;
+}
+
+.button-googleplus {
+  background-color: #DD4B39;
+  border: 1px solid #c23321;
+}
+.button-googleplus .icon {
+  border-right: 1px solid #c23321;
+}
+.button-googleplus .icon:after {
+  border-right: 1px solid #e47365;
+}
+.button-googleplus:hover {
+  background-color: #d73925;
 }
